@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <div class="header">
+      <h1>note pad</h1>
+    </div>
+    <form class="notes-form">
+      <h2>take notes</h2>
+      <div class="form-container">
+        <div class="add-notes">
+          <label for="title">Note Title:</label>
+          <input type="text" id="title" placeholder="Add note title here">
+        </div>
+        
+        <div class="add-notes">
+          <label for="author">Note Author:</label>
+          <input type="text" id="author" placeholder="Add note writer here">
+        </div>
+        
+        <div class="add-notes">
+          <label for="body">Note Body:</label>
+          <input type="text" id="body" placeholder="Add your notes here">
+        </div>
+      </div>
+      
+      
+      <div>
+        <button type="submit">ADD</button>
+      </div>
+    </form>
+    <div class="container"></div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

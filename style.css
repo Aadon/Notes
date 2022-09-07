@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1020px) {
+  .main {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: auto auto 1fr 1fr auto auto;
+  }
+  .notes-form {
+    grid-column: 3 / span 6;
+  }
+  .container {
+    grid-column: 5 / span 12;
+    margin-top: 15px;
+  }
+}
