@@ -20,10 +20,22 @@ const addNotes = (title, author, body) => {
 
 const createNotesElement = ({title, author, body}) => {
   const titleDiv = document.createElement('div');
-  const authorDiv = document.createElement('div');const bodyDiv = document.createElement('div');
+  titleDiv.classList.add('title-div');
+
+  const authorDiv = document.createElement('div');
+  authorDiv.classList.add('author-div');
+
+  const bodyDiv = document.createElement('div');
+  bodyDiv.classList.add('body-div');
+  
   const notesTitle = document.createElement('h2');
+  notesTitle.classList.add('notes-title')
+
   const notesAuthor = document.createElement('h3');
+  notesAuthor.classList.add('notes-author');
+
   const notesBody = document.createElement('p');
+  notesBody.classList.add('notes-body')
 
   notesTitle.textContent = `Note title: ${title}`;
   notesAuthor.textContent = `This note was taken by: ${author}`;

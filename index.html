@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="main">
+  <main class="wrapper">
     <div class="header">
-      <h1>note pad</h1>
+      <h1>NOTE PAD</h1>
+      <h2 class="head">take notes</h2>
     </div>
-    <form class="notes-form">
-      <h2>take notes</h2>
+      <form class="notes-form">
       <div class="form-container">
         <div class="add-notes">
           <label for="title">Note Title:</label>
@@ -27,7 +27,7 @@
         
         <div class="add-notes">
           <label for="body">Note Body:</label>
-          <input type="text" id="body" placeholder="Add your notes here">
+          <textarea type="text" id="body" placeholder="Add your notes here"></textarea>
         </div>
       </div>
       
@@ -38,6 +38,7 @@
     </form>
     <div class="container"></div>
   </main>
+  
   <script src="main.js"></script>
 </body>
 </html>
